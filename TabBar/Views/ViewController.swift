@@ -16,7 +16,6 @@ class ViewController: UIViewController {
         
         button.layer.backgroundColor = UIColor.systemCyan.cgColor
         button.layer.cornerRadius = CGFloat(25)
-        
         return button
     }()
 
@@ -24,12 +23,20 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         view.addSubview(myButton)
+        
+        myButton.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
     }
-    
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         myButton.center = view.center
+    }
+    
+    
+    
+    @objc func didTapButton() {
+        let tabBarVC = UITabBarController()
+        tabBarVC.setViewControllers([], animated: false)
     }
 
 
