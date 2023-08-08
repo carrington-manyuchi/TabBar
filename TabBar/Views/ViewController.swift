@@ -36,7 +36,24 @@ class ViewController: UIViewController {
     
     @objc func didTapButton() {
         let tabBarVC = UITabBarController()
-        tabBarVC.setViewControllers([], animated: false)
+        
+        // The reason we are creating the VC as constants instead of passing them directly is that we want to learn how to wrap them in a navigation controller.
+        let vc1 = FirstVC()
+        let vc2 = SecondVC()
+        let vc3  = ThirdVC()
+        let vc4 = FourthVC()
+        let vc5 = FifthVC()
+        
+        
+        title = "Home"
+        title = "About"
+        title = "Contact"
+        title = "Help"
+        title = "Settings"
+        
+        tabBarVC.setViewControllers([vc1, vc2, vc3, vc4, vc5], animated: false)
+        tabBarVC.modalPresentationStyle = .fullScreen
+        present(tabBarVC, animated: true)
     }
 
 

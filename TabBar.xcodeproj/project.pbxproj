@@ -16,6 +16,7 @@
 		8C11E5052A81246100D993DE /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C11E5042A81246000D993DE /* SecondVC.swift */; };
 		8C11E5072A81246C00D993DE /* ThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C11E5062A81246C00D993DE /* ThirdVC.swift */; };
 		8C11E5092A81249300D993DE /* FourthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C11E5082A81249300D993DE /* FourthVC.swift */; };
+		8C11E50B2A812AF400D993DE /* FifthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C11E50A2A812AF400D993DE /* FifthVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		8C11E5042A81246000D993DE /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
 		8C11E5062A81246C00D993DE /* ThirdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdVC.swift; sourceTree = "<group>"; };
 		8C11E5082A81249300D993DE /* FourthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthVC.swift; sourceTree = "<group>"; };
+		8C11E50A2A812AF400D993DE /* FifthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				8C11E5042A81246000D993DE /* SecondVC.swift */,
 				8C11E5062A81246C00D993DE /* ThirdVC.swift */,
 				8C11E5082A81249300D993DE /* FourthVC.swift */,
+				8C11E50A2A812AF400D993DE /* FifthVC.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			files = (
 				8C11E5072A81246C00D993DE /* ThirdVC.swift in Sources */,
 				8C11E4F12A811F9800D993DE /* ViewController.swift in Sources */,
+				8C11E50B2A812AF400D993DE /* FifthVC.swift in Sources */,
 				8C11E5052A81246100D993DE /* SecondVC.swift in Sources */,
 				8C11E5032A81245600D993DE /* FirstVC.swift in Sources */,
 				8C11E4ED2A811F9800D993DE /* AppDelegate.swift in Sources */,
