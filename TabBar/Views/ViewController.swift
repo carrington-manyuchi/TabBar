@@ -38,20 +38,30 @@ class ViewController: UIViewController {
         let tabBarVC = UITabBarController()
         
         // The reason we are creating the VC as constants instead of passing them directly is that we want to learn how to wrap them in a navigation controller.
-        let vc1 = FirstVC()
-        let vc2 = SecondVC()
-        let vc3  = ThirdVC()
-        let vc4 = FourthVC()
-        let vc5 = FifthVC()
+        let vc1 = UINavigationController(rootViewController: FirstVC())
+        let vc2 = UINavigationController(rootViewController: SecondVC())
+        let vc3 = UINavigationController(rootViewController: ThirdVC())
+        let vc4 = UINavigationController(rootViewController: FourthVC())
+        let vc5 = UINavigationController(rootViewController: FifthVC())
         
         
-        title = "Home"
-        title = "About"
-        title = "Contact"
-        title = "Help"
-        title = "Settings"
+        vc1.title = "Home"
+        vc2.title = "About"
+        vc3.title = "Contact"
+        vc4.title = "Help"
+        vc5.title = "Settings"
         
         tabBarVC.setViewControllers([vc1, vc2, vc3, vc4, vc5], animated: false)
+        
+        guard let items = tabBarVC.tabBar.items else {
+            return
+        }
+        let images = ["house", "bell", "person.circle", "gear", "star"]
+        
+        for x in 0..<items.count {
+            items[x].image = UIImage(systemName: images[x])
+        }
+        
         tabBarVC.modalPresentationStyle = .fullScreen
         present(tabBarVC, animated: true)
     }

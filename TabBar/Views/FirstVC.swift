@@ -11,6 +11,7 @@ class FirstVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
+        view.backgroundColor = .systemGray4
+        title = "Home"
     }
 }
