@@ -25,6 +25,9 @@ class ViewController: UIViewController {
         view.addSubview(myButton)
         
         myButton.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
+        
+        
+        
     }
     
     override func viewDidLayoutSubviews() {
@@ -64,6 +67,10 @@ class ViewController: UIViewController {
         
         tabBarVC.modalPresentationStyle = .fullScreen
         present(tabBarVC, animated: true)
+        
+        
+        UITabBar.appearance().backgroundColor = .systemGray5
+        UITabBar.appearance().tintColor = .systemGreen
     }
 
 
